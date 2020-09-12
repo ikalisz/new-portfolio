@@ -2,7 +2,13 @@ import React from 'react';
 import {
   ThemeProvider,
 } from '@material-ui/core/styles'
+import {
+  GitHub,
+  LinkedIn,
+  Instagram
+} from '@material-ui/icons'
 import styled from 'styled-components'
+import QuickLink from './QuickLink'
 
 function App() {
   return (
