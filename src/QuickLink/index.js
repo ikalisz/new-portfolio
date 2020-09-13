@@ -26,3 +26,5 @@ const Wrapper = styled.a`
     margin-right: 0.5em;
   }
 `
+
+export default QuickLink
