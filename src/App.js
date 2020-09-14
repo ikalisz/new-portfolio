@@ -202,9 +202,6 @@ const Info = styled.div`
   justify-content: space-between;
   position: sticky;
   top: 0em;
-  @supports (-webkit-appearance:none) {
-    min-height: calc(100vh - 56px);
-  }
   @media (max-width: 1000px) {
     min-height: 100vh;
     align-items: center;
