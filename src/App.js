@@ -1,27 +1,21 @@
 import React from 'react';
 import {
-  amber,
   blue,
   deepPurple,
-  green,
   indigo,
   lightBlue,
-  orange,
-  pink,
   red,
 } from '@material-ui/core/colors'
 import {
-  ThemeProvider,
-} from '@material-ui/core/styles'
-import {
   GitHub,
   LinkedIn,
-  Instagram,
   ExpandMore,
 } from '@material-ui/icons'
+import {
+  Gmail,
+} from 'mdi-material-ui'
 import styled from 'styled-components'
 import QuickLink from './QuickLink'
-import Typing from './Typing'
 import Rotate from './Rotate'
 
 function App() {
@@ -38,6 +32,11 @@ function App() {
             Icon={LinkedIn}
             link="https://www.linkedin.com/in/ikalisz/"
             color={blue[800]}
+          />
+          <QuickLink
+            Icon={Gmail}
+            color={red[500]}
+            link="mailto:ikalisz@yahoo.com"
           />
         </QuickLinks>
         <InfoContainer>
