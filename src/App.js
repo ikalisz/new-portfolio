@@ -5,6 +5,8 @@ import {
   indigo,
   lightBlue,
   red,
+  pink,
+  grey,
 } from '@material-ui/core/colors'
 import {
   GitHub,
@@ -17,6 +19,7 @@ import {
 import styled from 'styled-components'
 import QuickLink from './QuickLink'
 import Rotate from './Rotate'
+import Appearance from './Appearance'
 
 function App() {
   return (
@@ -81,7 +84,17 @@ function App() {
         <Box
           color={lightBlue}
         >
-
+          <BoxWrapper>
+            <SoftTitle>
+              Volunteer
+            </SoftTitle>
+            <Appearances>
+              <Appearance
+                date="June 2019"
+                title="Skill Struck Mentor"
+              />
+            </Appearances>
+          </BoxWrapper>
         </Box>
       </Boxes>
     </Page>
@@ -254,4 +267,16 @@ const Name = styled.div`
   font-size: 4em;
   margin-bottom: 1rem;
   text-transform: uppercase;
+`
+
+const SoftTitle = styled.div`
+  color: #fff;
+  font-family: Chivo;
+  font-size: 1.5em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+`
+
+const Appearances = styled.div`
 `

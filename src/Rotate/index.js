@@ -8,6 +8,8 @@ function Rotate() {
   const items = [
     "Developer",
     "Leader",
+    "Innovative",
+    "Passionate",
   ]
   return (
     <RotateText
