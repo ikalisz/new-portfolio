@@ -5,8 +5,6 @@ import {
   indigo,
   lightBlue,
   red,
-  pink,
-  grey,
 } from '@material-ui/core/colors'
 import {
   GitHub,
