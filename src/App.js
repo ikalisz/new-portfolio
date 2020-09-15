@@ -92,6 +92,30 @@ function App() {
                 title="Skill Struck Mentor"
               />
             </Appearances>
+            <Divider />
+            <SoftTitle>
+              Presentations
+            </SoftTitle>
+            <Appearances>
+              <Appearance
+                date="May 2019"
+                title="Learning Redux Hooks - DevMountain"
+              />
+              <Appearance
+                date="September 2019"
+                title="React Hooks: How the lifestyles are being replaced - React Denver"
+              />
+            </Appearances>
+            <Divider />
+            <SoftTitle>
+              Education
+            </SoftTitle>
+            <Appearances>
+              <Appearance
+                date="March 2019 to July 2019"
+                title="DevMountain Web Development"
+              />
+            </Appearances>
           </BoxWrapper>
         </Box>
       </Boxes>
@@ -270,11 +294,18 @@ const Name = styled.div`
 const SoftTitle = styled.div`
   color: #fff;
   font-family: Chivo;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 `
 
 const Appearances = styled.div`
+`
+
+const Divider = styled.div`
+  background-color: #fff;
+  height: 0.4em;
+  margin: 2.25em 0;
+  opacity: 0.65;
 `

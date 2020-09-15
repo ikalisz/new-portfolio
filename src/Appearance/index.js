@@ -10,17 +10,26 @@ function Appearance({
   location,
   title,
 }) {
+
+  const linkComponent = link !== "#" ? (
+    <Title
+      href={link}
+      target="_blank"
+    >
+        {title}
+    </Title>
+  ) : (
+    <NoLink>
+      {title}
+    </NoLink>
+  )
+  
   return (
     <Container>
       <Date>
         {location || date}
       </Date>
-      <Title
-        href={link}
-        target="_blank"
-      >
-        {title}
-      </Title>
+      {linkComponent}
     </Container>
   )
 }
@@ -34,12 +43,21 @@ const Container = styled.div`
 `
 
 const Date = styled.div`
-  font-size: 0.9em;
-  opacity: 0.8;
+  font-size: 1em;
+  opacity: 0.9;
   text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
 `
 
 const Title = styled.a`
   display: block;
-  color: ${grey.A400}
+  color: #fff;
+`
+
+const NoLink = styled.div`
+  display: block;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #fff;
 `
